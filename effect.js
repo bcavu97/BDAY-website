@@ -187,9 +187,9 @@ $('document').ready(function(){
 			var totalMessages = $("p").length;
 	
 			if (i < totalMessages - 1) {
-				$("p:nth-child("+i+")").fadeOut('slow').delay(800).promise().done(function(){
+				$("p:nth-child("+i+")").fadeOut('slow').delay(1500).promise().done(function(){
 					i=i+1;
-					$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
+					$("p:nth-child("+i+")").fadeIn('slow').delay(1500);
 					msgLoop(i);
 				});
 			} else {
